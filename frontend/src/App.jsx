@@ -13,7 +13,7 @@ function App() {
 
   return (
     <div className="container">
-      <h1>Inicilited Proyect</h1>
+      <h1>Sistem Fullstack UCE</h1>
       <h2>{mensaje}</h2>
     </div>
   )
