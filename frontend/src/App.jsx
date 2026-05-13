@@ -1,10 +1,11 @@
 import { useState, useEffect } from 'react'
-import './App.css'
 
-function App() {
+
+const App = () => {
   const [mensaje, setMensaje] = useState('Cargando...')
 
   useEffect(() => {
+    const API_URL = 'http://localhost:8080/api/hola';
     fetch('http://localhost:8080/api/hola')
       .then(response => response.text())
       .then(data => setMensaje(data))
@@ -13,7 +14,7 @@ function App() {
 
   return (
     <div className="container">
-      <h1>Inicilited Proyect</h1>
+      <h1>Sistem Fullstack UCE</h1>
       <h2>{mensaje}</h2>
     </div>
   )
