@@ -14,6 +14,7 @@ services:
 
   backend:
     build: ./backend
+    image: kennycis/fullstack-backend:latest
     ports:
       - "8080:8080"
     environment:
@@ -25,6 +26,7 @@ services:
 
   frontend:
     build: ./frontend
+    image: kennycis/fullstack-frontend:latest
     ports:
       - "5173:5173"
     depends_on:
